@@ -1,0 +1,20 @@
+###
+GET http://localhost:8000/rides HTTP/1.1
+###
+GET http://localhost:8000/rides/10 HTTP/1.1
+
+###
+POST http://localhost:8000/rides HTTP/1.1
+Content-Type: application/json
+
+{
+    "start_lat": -20,
+    "start_long": "-40",
+    "end_lat": "-80",
+    "end_long": "100",
+    "rider_name": "David",
+    "driver_name": "John1ss00",
+    "driver_vehicle": "BMW"
+}
+
+
